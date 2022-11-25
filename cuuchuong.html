@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sinh bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let a = "<table border='1'  >"
+    for (let i = 2; i <10 ; i++) {
+        a = a + "<tr>";
+        for (let j = 1; j < 10 ; j++) {
+            a = a + "<td>"+ i + "x" + j + "=" + i * j
+        }
+        a = a + "<tr/>";
+    }a = a + "<table/>";
+    document.write(a)
+</script>
+</body>
+</html>
