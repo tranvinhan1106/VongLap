@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hãy thử đoán xem</title>
+</head>
+<body>
+    <button type="button"  onclick="play()">Chơi</button>
+    <script>
+      function play() {
+          let d = +prompt('Nhập khoảng muốn đoán ')
+         let check  = Math.floor(Math.random()*d);
+          let count = 0
+          do {
+              let number =+prompt('Nhập số bạn đoán')
+              if (number === check){
+                  alert('Chúc Mừng hehe !')
+                  break;
+              }else if (number > check){
+                  alert('lớn hơn mất rồi !')
+                  alert('nhập lại đê !')
+                  count ++ ;
+              }else if ( number < check) {
+                  alert('nhỏ hơn mất rồi !')
+                  alert('nhập lại đê !')
+                  count++;
+              }
+          }while ( count <= 3 )
+          alert('trò chơi kết thúc:)')
+      }
+    </script>
+</body>
+</html>
