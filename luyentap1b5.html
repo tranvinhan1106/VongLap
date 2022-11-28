@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 20 số đầu tiên trong dãy fibonacci</title>
+</head>
+<body>
+    <script>
+        let n1 = 0 ;
+        let n2 = 1 ;
+        const number = 20
+        let sum = 0
+            document.write('fibonacci Range :' + '<br>')
+        for (let i = 1 ;i <= number ; i++) {
+            document.write(n1 + '<br>')
+            sum = sum +n1
+            let c
+            c = n1 + n2
+            n1= n2
+            n2 = c
+            }
+            document.write('tổng của 20 số đầu tiên trong dãy fibonacci :' + sum)
+    </script>
+</body>
+</html>
